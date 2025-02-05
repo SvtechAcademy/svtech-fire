@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import svtechLogo from '/src/asset/svtech.webp';
+import Auth from './Auth/Auth';
 
 const DemoHeader = () => {
   const [isActive, setIsActive] = useState(false);
@@ -27,6 +28,7 @@ const DemoHeader = () => {
     { title: 'Home', path: '/' },
     { title: 'About', path: '/about' },
     { title: 'Services', path: '/services' },
+   
     // Add more links as needed
   ];
 
@@ -47,7 +49,9 @@ const DemoHeader = () => {
           <div className='relative'>
             {/* Add any content here if needed */}
           </div>
-          <button className='hidden text-sm sm:flex items-center gap-5'>sign in</button>
+          <button className='hidden text-sm sm:flex items-center gap-5'>sign in
+          </button>
+          <Auth/>
           <button className={` text-white rounded-full px-3 p-2 text-sm font-medium ${isActive ? "bg-green-700" : "bg-black"}`}>
   Get started
 </button>
