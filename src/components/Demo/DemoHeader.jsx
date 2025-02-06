@@ -6,6 +6,7 @@ import Auth from './Auth/Auth';
 
 const DemoHeader = () => {
   const [isActive, setIsActive] = useState(false);
+  const [modal, setModal] = useState(true);
 
   useEffect(() => {
     const scrollMe = () => {
@@ -43,11 +44,16 @@ const DemoHeader = () => {
               </Link>
             ))}
           </nav>
-          <button className='hidden text-sm sm:flex items-center gap-5 text-white hover:text-gray-300'>
+          
+          <button
+          onClick={() => setModal(true)}
+           className='hidden text-sm sm:flex items-center gap-5 text-white hover:text-gray-300'>
             Sign In
           </button>
-          <Auth />
-          <button className={`text-white rounded-full px-4 py-2 text-sm font-medium transition-colors duration-300 ${isActive ? "bg-green-700 hover:bg-green-600" : "bg-blue-700 hover:bg-blue-600"}`}>
+          <Auth modal={modal} setModal={setModal}/>
+          <button
+          onClick={() => setModal(true)}
+           className={`text-white rounded-full px-4 py-2 text-sm font-medium transition-colors duration-300 ${isActive ? "bg-green-700 hover:bg-green-600" : "bg-blue-700 hover:bg-blue-600"}`}>
             Get Started
           </button>
         </div>
