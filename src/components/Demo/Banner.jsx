@@ -2,8 +2,8 @@ import React from 'react';
 
 const Banner = () => {
   return (
-    <div className="bg-blue-950 border-b border-black min-h-screen flex items-center justify-center">
-      <div className="max-w-screen-lg w-full px-4 py-20 flex flex-col items-center gap-4">
+    <div className="bg-blue-950 border-b border-black min-medium-screen flex items-center justify-center">
+      <div className="max-w-screen-lg w-full px-2 py-20 flex flex-col items-center gap-4">
         <h1 className="font-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal text-white text-center bg-bl">
           Welcome to SVTech
         </h1>
