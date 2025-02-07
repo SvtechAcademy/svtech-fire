@@ -2,7 +2,7 @@ import React from 'react';
 import Banner from './Banner'; // Adjust the path as necessary
 import Trending from './Trending';
 import Posts from '../Common/Posts/Posts';
-import Discover from './discover';
+import Discover from './Discover';
 
 const Demo = () => (
   <>
@@ -12,7 +12,7 @@ const Demo = () => (
     <div className='flex-[1.5rem]'>
       <Posts/>
     </div>
-    <div className='flex-[1rem] h-full relative'>
+    <div className='flex-[1] full relative'>
       <Discover/>
     </div>
     </div>
